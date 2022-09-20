@@ -1,0 +1,118 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+}
+#left,#right{
+    width: 50vw;
+    height: 100%;
+}
+#right{
+    background: url(/img/login_page_image_.webp);
+    background-position: center;
+    background-size: cover;
+
+}
+#nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    padding: 0 3vw;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img:nth-child(2){
+    cursor: pointer;
+}
+.sign-in{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in p {
+    font: 600 1.2vw "Lato";
+    margin-bottom: 0.5vh;
+   
+}
+.sign-in h1 {
+    font: 700 2.8vw "Lato";
+    margin-bottom: 3vh;
+
+}
+.sign-in form {
+    position: relative;
+    width: 22.4vw;
+}
+form h5 {
+    text-align: left;
+    margin-top: 1vh;
+    font: 600 1vw "Lato";
+    color: #767676;
+}
+form input {
+
+    padding: 1vh 1vw;
+    width: 100%;
+    background-color: white;
+    margin: 1vh 0;
+    border: none;
+outline: none;
+    border-bottom: 3px solid rgb(24, 227, 254);
+}
+sign-in-page a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-top: 2.6vh;
+}
+form button {
+    margin-top: 1.2vw;
+    width: 100%;
+    padding: 1.8vh 0;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font: 900 1.2vw "roboto";
+    background: linear-gradient(to right, #5842cf,
+    #4561db,
+    #397be4,
+    #4785e7,
+    #518be9);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+
+}
+.sign-in>a{
+    margin-top: 1vw;
+    color: #111;
+    font: 600 1vw "roboto";
+
+}
+.with_google {
+    gap: 1.5vw;
+    border-radius: 4px;
+    margin-top: 1.5vw;
+    font: 900 1.1vw "Lato";
+    display: flex;
+    padding: 1.4vh 1.3vw;
+    color: white ;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(255, 85, 67), rgb(214, 16, 16));
+}

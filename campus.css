@@ -1,0 +1,479 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+a {
+    text-decoration: none;
+}.main{
+    width: 100vw;
+}
+
+.nav {
+    position: fixed;
+    z-index: 999;
+    padding: 0 0 0 4.2vw;
+    width: 100vw;
+    height: 6.5vh;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-line {
+    margin-left: .5vw;
+    width: 2px;
+    height: 35%;
+    background: rgb(155, 144, 144);
+}
+
+.nav-left {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    width: 18vw;
+    height: 100%;
+}
+
+.nav-left img {
+    height: 5vh;
+}
+.nav-left a h1 {
+    margin-left: .4vw;
+    letter-spacing: -0vw;
+    color: rgb(53, 51, 51);
+    font: 600 1.1vw "roboto";
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 58vw;
+}
+
+.nav-right a {
+    color: black;
+    font: 800 1.1vmax "Lato";
+}
+
+
+
+.page-1{
+    width: 100vw;
+    height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: start;
+}
+.page-1>h2{
+    border-top:  1px solid white;
+   text-align: center;
+   padding-top: 3vw;
+    font:800 6vw "Dosis";
+    letter-spacing: -.7vw;
+    
+}
+.page-1>h1{
+    font:700 1.5vw "Lato";
+    margin-top: 1vw;
+    padding: .8vw 4vw;
+    background: #4eafff;
+    border-radius: 6px;
+    cursor: pointer;
+   color: white;
+   display: inline-block;
+   text-align: center;
+   margin: auto;
+   transition: .5s all ease-in ;
+}
+.input{
+    position: relative;
+margin-bottom: 1vw;
+}
+/* input{
+
+    cursor: pointer;
+    width: 2.7vw;
+    height: 2.7vw;
+    border-radius: 50%;
+    box-shadow: 0 0 .5vh  rgb(145, 142, 142);
+border: none;
+outline: none;
+}  */
+input{
+padding-left: 2vw;
+    width: 18vw;
+    height: 2.9vw;
+    border-radius: 2.5vw;
+    /* box-shadow: 0 0 .5vh  rgb(145, 142, 142); */
+border: none;
+background: #deffff;
+outline: none;
+} 
+input::placeholder{
+    /* padding-left: 1vw; */
+    font:600 1vw "Dosis";
+
+}
+.input .img{
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+   right: 1%;
+    width: 2.5vw;
+    height: 2.5vw;
+    box-shadow: 0 0 .3vh  rgb(145, 142, 142);
+display: flex;
+align-items: center;
+justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+/* .input img{
+    position: absolute;
+    top: 10%;
+   right: 2%;
+    width: 2.2vw;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    border-radius: 50%;
+} */
+/* .input img{
+    position: absolute;
+    top: 22%;
+   left: 25%;
+    width: 1.4vw;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    border-radius: 50%;
+} */
+.page-1 h1:hover{
+    color:#4eafff;
+    background-color: white;
+    border: 1px solid #4eafff;
+}
+
+.page-1 .profile{
+    padding-top: 4vw;
+    width: 100vw;
+    display: inline-block;
+    height: 58vh;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: rgb(255, 255, 255);
+}.page-1 .profile::-webkit-scrollbar{
+    display: none;
+}
+.p1,.p2,.p3,.p4,.p5,.p6,.p7,.p8{
+    width: 18vw;
+    height: 22vw;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: .25s all ease-in-out;
+}
+.p1:hover{
+    box-shadow: 0 0 2px 3px rgba(133, 123, 123, 0.248);
+}
+.p2:hover{
+    box-shadow: 0 0 2px 3px rgba(133, 123, 123, 0.208);
+}.p3:hover{
+    box-shadow: 0 0 2px 3px rgba(133, 123, 123, 0.248);
+}.p4:hover{
+    box-shadow: 0 0 2px 3px rgba(133, 123, 123, 0.248);
+}.p5:hover{
+    box-shadow: 0 0 2px 3px rgba(133, 123, 123, 0.248);
+}.p6:hover{
+    box-shadow: 0 0 2px 3px rgba(133, 123, 123, 0.248);
+}.p7:hover{
+    box-shadow: 0 0 2px 3px rgba(133, 123, 123, 0.248);
+}.p8:hover{
+    box-shadow: 0 0 2px 3px rgba(133, 123, 123, 0.248);
+}
+.p1{
+    left: 5%;
+}
+.p2{
+    left: 25%;
+}.p3{
+    left: 45%;
+}.p4{
+    left: 65%;
+}.p5{
+    left: 85%;
+}.p6{
+    left: 105%;
+}.p7{
+    left: 125%;
+}.p8{
+    left: 145%;
+}
+.profile img{
+    width: 80%;
+    border-radius: 50%;
+}
+.profile h1{
+    margin-top: .5vw;
+    font:700 1.4vw "Dosis";
+}
+.profile p{
+    margin-top: 0vw;
+    font:600 1.2vw "Lato";
+}
+
+
+
+.page-2{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+}
+.page-2 .left{
+    width: 50vw;
+    height: 100%;
+    
+}
+.page-2 .left h1{
+    overflow: hidden;
+    margin: 8vw 0 0 5vw;
+    font: 700 9vw "roboto";
+    line-height: 8vw;
+    letter-spacing: -1vw;
+}
+.page-2 .right{
+    width: 40vw;
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.page-2 .right h2{
+    
+    font: 700 1.4vw "Dosis";
+}
+.page-2 .right button{
+    margin-top: 1.5vw;
+  border: 1px solid black;
+padding: 1vw 3vw;
+background-color: transparent;
+font: 700 1.1vw "Dosis";
+border-radius: 2vw;
+transition: .4s all ease-in;
+}
+.page-2 .right button:hover{
+ background: rgb(37, 36, 36);
+ color: white;
+}
+
+
+
+
+.page-3{
+    width: 100vw;
+    height: 100%;
+padding: 4vw 2vw 2vw 2vw;
+    background: #000;
+}
+.page-3 .first{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    /* gap: 10vw; */
+padding: 2vw 4vw;
+}
+.page-3 .first h1{
+padding: 1vw;
+font: 700 10.5vw "Lato";
+letter-spacing: -.8vw;
+display: flex;
+text-align: start;
+align-items: center;
+/* overflow: hidden; */
+margin-right: 8vw;
+}
+.page-3 .first h2{
+font: 700 1.3vw "Lato";
+    line-height: 1.2vw;
+}
+.page-3 .first button{
+    margin-top: 3vw;
+    padding: 1vw 2vw;
+font: 700 1vw "Lato";
+color: #ffff;
+background-color: transparent;
+border: 1px solid white;
+border-radius: 2vw;
+}
+.page-3 .first button:hover{
+    background-color: #deffff;
+    color: rgb(54, 52, 52);
+}
+.page-3 .second{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    display: inline-block;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 3vw;
+}
+.page-3 .second::-webkit-scrollbar{
+    display: none;
+}
+.page-3 .second .secon-1,.secon-2,.secon-3,.secon-4{
+    
+    width: 34vw;
+    height: 85%;
+    background-color: chartreuse;
+    position: absolute;
+}
+.page-3 .second .secon-1{
+    top: 5%;
+    left: 2vw;
+    background: url(/img/DSC_0759-min_11zon_xQfQHuLAg\ \ page-44-11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page-3 .second .secon-2{
+    top: 5%;
+    left: 38vw;
+    background: url(/img/JvsS-min_11zon_PhfG7NTv3\ page-4\ -2.jpg);
+    background-position: center;
+    background-size: cover;
+}.page-3 .second .secon-3{
+    top: 5%;
+    left: 74vw;
+    background: url(/img/Sirt-min_11zon__4__Ez62BYZw_\ page-4\ -3.jpg);
+    background-position: center;
+    background-size: cover;
+}.page-3 .second .secon-4{
+    top: 5%;
+    left: 110vw;
+    background: url(/img/Oriental-min_11zon_36PsGm7uD\ page-4\ -4.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.secon-5{
+    width: 3vw;
+    height: 30%;
+    position: absolute;
+    top: 5%;
+    left: 150vw;
+}.second h1{
+font: 900 1.4vw "Lato";
+margin: .7vmax 1.5vmax;
+color: rgb(87, 80, 80);
+}
+
+.page-4{
+    width: 100vw;
+    height: 100vh;
+    padding: 5vw 6vw 2vw 6vw;
+}
+.page-4 .photo{
+    width: 100%;
+    height: 65vh;
+    background: url(/img/theSher_J5rhrHif-\ 11.webp);
+    background-position: center;
+    background-size: cover;
+}
+.page-4  .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-4  .content h1{
+  margin-top: 1vw;
+    font: 700 8vw "Lato"; 
+    letter-spacing: -.7vw;
+}
+.page-4  .content .content-1 h2{
+    margin-top: 1vw;
+    font: 400 2.8vw "Lato"; 
+}.page-4  .content .content-1 p{
+    margin-top: .3vw;
+    font: 500 1.2vw "Lato"; 
+}
+
+
+.page-5{
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222222;
+    display: flex;
+    /* padding: 2vw 3vw 1vw 3vw; */
+}
+.p5-left{
+padding: 2vw 0 1.2vw 3vw;
+    width: 35vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content: space-between;
+position: relative;
+}
+.p5-left h1{
+    font: 700 9vw "Lato";
+  line-height: 7.5vw;
+}
+
+.p5-left h1::-webkit-scrollbar{
+display: none;
+}.p4-left p{
+    font: 400 1.1vw "Dosis";
+    line-height: 99%;
+    /* margin-bottom: 1.2vw; */
+}
+.page-5 .p5-right{
+padding: 7vw 4vw 1.2vw 0;
+width: 65vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+
+}
+.page-5 .p5-right p{
+    margin-top: 4vw;
+    font: 400 1.2vw "Dosis";
+    line-height: 1vw;
+    text-align: right;
+}
+.page-5 .p5-right p::-webkit-scrollbar{
+    display: none;
+}
+.p5-1{
+    margin-top: 1vw;
+    width: 48vw;
+    height: 62vh;
+    background: url(/img/IMG_3914_85tyvDsUs\ group.webp);
+    background-position: center;
+    background-size: cover;
+}.arrow{
+    position: absolute;
+bottom: 20%;
+left: 2%;
+transform: rotate(-75deg);
+}
